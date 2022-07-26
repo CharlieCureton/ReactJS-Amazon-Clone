@@ -1,11 +1,12 @@
 import React from 'react'
 import './Header.css';
+import Logo from './amazon_logo.webp';
 
 function Header() {
   return (
     <div className='header'>
-        <img src="./amazon_logo.webp" className="header__logo" alt="Amazon Logo" />
-        
+        <img src={Logo} className="header__logo" alt="Amazon Logo" />
+
         <div className="header__search">
           <input className="header__searchInput" type="text"/>
           {/* Logo */}

@@ -3,13 +3,16 @@ import '../css/Header.css';
 import Logo from '../assets/amazon_logo.webp';
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
     <div className='header'>
-        <div className="headerLogo__wrapper">
-          <img src={Logo} className="header__logo" alt="Amazon Logo" />
-        </div>
+        <Link to="/">
+          <div className="headerLogo__wrapper">
+            <img src={Logo} className="header__logo" alt="Amazon Logo" />
+          </div>
+        </Link>
 
         <div className="header__search">
           <input className="header__searchInput" type="text" placeholder="Search for a product..."/>

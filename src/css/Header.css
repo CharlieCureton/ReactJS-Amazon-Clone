@@ -6,25 +6,20 @@
     position: sticky;
     top: 0;
     z-index: 100;
-    padding: 0;
+    padding: 0px;
 }
 
 .headerLogo__wrapper {
     width: 120px;
-    height: 100%;
-    padding: 5px 2px;
-    margin-right: 10px;
+    height: calc(100% - 50px);
+    margin: 5px 3px;
     box-sizing: border-box;
 }
 
 .header__logo {
     width: 100%;
-    display: flex;
+    padding: 10px;
     box-sizing: border-box;
-    height: 100%;
-    justify-content: center;
-    object-fit: contain;
-    align-items: center;
 }
 
 .header__search {
@@ -88,13 +83,13 @@
     margin: 0 10px;
 }
 
-.header__option, .header__logo {
+.header__option, .headerLogo__wrapper, .header__optionBasket {
     padding: 5px;
     border: solid 1.5px transparent;
     border-radius: 4px;
 }
 
-.header__option:hover, .header__logo:hover {
+.header__option:hover, .headerLogo__wrapper:hover, .header__optionBasket:hover {
     border: solid 1.5px #fff;
     cursor: pointer;
 }
